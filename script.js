@@ -4,7 +4,7 @@
 
 // URL del backend del chatbot (n8n con GPT)
 // IMPORTANTE: Reemplaza esta URL con tu endpoint de n8n que conecta con GPT
-const CHATBOT_API_URL = 'https://TU-ENDPOINT-N8N-AQUI';
+const CHATBOT_API_URL = 'https://n8n-yl61.onrender.com/webhook-test/restaurant-chatbot';
 
 // Información del restaurante
 const restaurantInfo = {
