@@ -12,11 +12,11 @@ const restaurantInfo = {
     eslogan: "Sabores caseros todos los días",
     descripcion: "En Restaurante Demo nos especializamos en ofrecer comida típica de alta calidad con un ambiente familiar acogedor.",
     direccion: "Calle Ejemplo 123, Ciudad, País",
-    telefono: "+507 6000-0000",
+    telefono: "+507 6000-000090",
     // IMPORTANTE: Reemplaza este número con tu número de WhatsApp real en formato internacional
     // Formato: código de país + número (sin espacios, guiones ni signos +)
     // Ejemplo para Panamá: 50760000000
-    whatsappNumero: "50760000000",
+    whatsappNumero: "5076000000090",
     horario: {
         semana: "Lunes a Viernes: 11:00 AM - 10:00 PM",
         finDeSemana: "Sábado y Domingo: 12:00 PM - 11:00 PM"
