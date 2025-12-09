@@ -336,20 +336,22 @@ async function sendMessage() {
         removeTypingIndicator(typingIndicator);
 
         // Ajustar respuesta según el nº de pregunta
-        let finalResponse = botResponse;
+let finalResponse = botResponse;
 
-        if (questionCount === 1) {
-            // 1ª pregunta respondida
-            finalResponse = botResponse + " Te quedan 2 preguntas más.";
-        } else if (questionCount === 2) {
-            // 2ª pregunta respondida
-            finalResponse = botResponse + " Te queda 1 pregunta más, ¿qué más deseas preguntar?";
-        } else if (questionCount === 3) {
-            // 3ª pregunta respondida: cerrar sesión de preguntas
-            finalResponse = botResponse + " Esta fue tu tercera pregunta. Para todo lo demás, por favor contáctanos por WhatsApp en la sección de contacto.";
-            chatLocked = true;
-        }
-
+if (questionCount === 1) {
+    // 1ª pregunta respondida
+    finalResponse = botResponse + " Te quedan 3 preguntas más.";
+} else if (questionCount === 2) {
+    // 2ª pregunta respondida
+    finalResponse = botResponse + " Te quedan 2 preguntas más.";
+} else if (questionCount === 3) {
+    // 3ª pregunta respondida
+    finalResponse = botResponse + " Te queda 1 pregunta más, ¿qué más deseas preguntar?";
+} else if (questionCount === 4) {
+    // 4ª pregunta respondida: cerrar sesión de preguntas
+    finalResponse = botResponse + " Esta fue tu cuarta pregunta. Para todo lo demás, por favor contáctanos por WhatsApp en la sección de contacto.";
+    chatLocked = true;
+}
         addBotMessage(finalResponse);
     } catch (error) {
         removeTypingIndicator(typingIndicator);
