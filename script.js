@@ -77,6 +77,24 @@ const menuItems = [
      nombre: "Carimañolas Rellenas", 
      descripcion: "Carimañolas de yuca fritas rellenas de carne y queso, servidas con salsa blanca.", 
      precio: "$6.50" 
+    },
+    {
+        id: 10,
+        nombre: "Jugos Naturales",
+        descripcion: "Jugos naturales de frutas variadas, servidos en vaso de 12 oz.",
+        precio: "$3.00"
+    },
+    {
+        id: 11,
+        nombre: "Sodas",
+        descripcion: "Gaseosas en lata o botella individual, siempre bien frías.",
+        precio: "$2.00"
+    },
+    {
+        id: 12,
+        nombre: "Bebidas Calientes",
+        descripcion: "Café, té o chocolate caliente, servidos en taza.",
+        precio: "$2.50"
     }
 ];
 
